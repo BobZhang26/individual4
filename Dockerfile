@@ -11,10 +11,10 @@ COPY . /app
 RUN pip install -r requirements.txt
 
 # Make port 5000 available to the world outside this container
-EXPOSE 4000
+EXPOSE 9000
 
 # Define environment variable
 ENV NAME World
 
 # Run app.py when the container launches
-CMD ["python", "app.py", "--host=0.0.0.0", "--port=4000"]
+CMD ["python", "app.py", "--host=0.0.0.0", "--port=9000"]
