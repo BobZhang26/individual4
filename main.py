@@ -1,8 +1,11 @@
-"""
-Main cli or app entry point
-"""
-def add(x,y):
-    return x + y
+from flask import Flask
 
-if __name__ == "__main__":
-    add(1,1)
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return 'Hello, welcome to my Flask web page!'
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
