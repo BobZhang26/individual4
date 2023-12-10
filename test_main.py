@@ -8,6 +8,3 @@ Test goes here
 
 # if __name__ == "__main__":
 #     assert test_func() == 2
-  
-  
-
